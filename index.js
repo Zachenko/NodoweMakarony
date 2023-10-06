@@ -10,7 +10,7 @@ app.use(exporess.static("public/css"));
 app.get("/", (req, res) => {
     res.render("home", {
         title: "Documentik",
-        content: "This is a very special page"
+        content: "BODY"
     })
 })
 
