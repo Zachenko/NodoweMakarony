@@ -1,8 +1,68 @@
+/* коментярями я буду позначати важливу механіку сторінки
+   тому, якщо коментарів не буде, можна щось змінити
+*/
+
+* {
+    margin: 0; /**/
+    padding: 0; /**/
+    box-sizing: border-box; /**/
+    font-family: monospace;
+}
+
 #bdiv {
     width:100px;
     height:100px;
     background-image:linear-gradient(red, lime, blue);
-    display:flex;
+    display:inline-flex;
     justify-content:center;
     align-items:center
+}
+
+#nums {
+    display: inline-block;
+}
+
+nav {
+    height: 10vh; /**/
+    border-width: 0 0 1px 0;
+    border-color: black;
+    border-style: solid;
+    display: flex; /**/
+    justify-content: center; /**/
+    align-items: center; /**/
+    background-color:rgb(99, 79, 50);
+}
+
+.main {
+    min-height: 80vh; /**/
+    background-color: rgb(222, 213, 159);
+}
+
+footer {
+    min-height: 10vh; /**/
+    border-width: 1px 0 0 0;
+    border-color: black;
+    border-style: solid;
+    background-color:rgb(99, 79, 50);   
+}
+
+.navlist {
+    width: min-content; /**/
+    display: flex; /**/
+    list-style-type: none;
+}
+
+.navlist li {
+    padding: 5px 25px;
+}
+
+.navlist li a {
+    text-decoration: none;
+    color: black;
+    font-size: 2em;
+    text-transform: uppercase;
+}
+
+.navlist li a:hover {
+    text-decoration: underline;
 }
