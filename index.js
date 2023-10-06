@@ -11,7 +11,6 @@ app.get("/home", (req, res) => {
     res.render("home", {
         title: "home | Makaron",
         content: "BODY",
-        port: port,
         nums: ["one", "two", 3, "4otyry"]
     })
 });
