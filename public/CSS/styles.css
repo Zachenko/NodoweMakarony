@@ -66,3 +66,53 @@ footer {
 .navlist li a:hover {
     text-decoration: underline;
 }
+
+#contactform {
+    width: 250px;
+    margin-top: 50px;
+}
+
+#contactform form {
+    width: inherit;
+}
+
+#contactform form input, #contactform form textarea {
+    padding: 10px 15px;
+    margin: 10px 0;
+    width: inherit;
+}
+
+#contactform h2 {
+    margin-top: -10px;
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 2.5em;
+}
+
+.flexmain {
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+}
+
+#inform {
+    width: 350px;
+    border-width: 1px 1px 0 0;
+    border-style: solid;
+    margin-top: 50px;
+    text-align: center;
+}
+
+#inform {
+    font-size: 2em;
+}
+
+#inform * {
+    margin: 10px 0;
+}
+
+#mcu {
+    font-size: 4em;
+    text-align: center;
+    padding-top: 50px;
+}
