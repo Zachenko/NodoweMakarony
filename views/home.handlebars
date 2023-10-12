@@ -1,4 +1,4 @@
-<div id="bdiv">
+{{!-- <div id="bdiv">
     {{#if content}}
         {{content}}
     {{/if}}
@@ -8,4 +8,19 @@
     {{#each nums}}
     <div>{{this}}</div>
     {{/each}}
+</div> --}}
+
+<div>
+    <div class="homeflex">
+        {{#each makaron}}
+        <div class="makaroncontainer">
+            <figure>
+                <div class="radialblack"></div>
+                <div class="darktrans"></div>
+                <img clas="figimg" src="/images/{{this.title}}.jpg" width="250">
+                <figcaption class="mkrncaption">Bolognese</figcaption>
+            </figure>
+        </div>
+        {{/each}}
+    </div>
 </div>

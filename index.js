@@ -1,17 +1,29 @@
-const exporess = require("express");
+const express = require("express");
 const exHb = require("express-handlebars");
-const app = exporess();
-const port = process.env.PORT || 8080;
+const app = express();
+const port = process.env.PORT || 3000;
 
 app.engine("handlebars", exHb.engine({defaultLayout: "main"}))
 app.set("view engine", "handlebars");
-app.use(exporess.static("public/css"));
+app.use(express.static("public"));
 
 app.get("/home", (req, res) => {
     res.render("home", {
         title: "home | Makaron",
-        content: "BODY",
-        nums: ["one", "two", 3, "4otyry"]
+        makaron: [
+            {
+                title: "bolognese"
+            },
+            {
+                title: "zupa pomidorowa z makaronem"
+            },
+            {
+
+            },
+            {
+
+            }
+        ]
     })
 });
 

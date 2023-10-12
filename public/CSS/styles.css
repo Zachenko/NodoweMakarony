@@ -6,7 +6,7 @@
     margin: 0; /**/
     padding: 0; /**/
     box-sizing: border-box; /**/
-    font-family: monospace;
+    font-family: Georgia, serif;;
 }
 
 #bdiv {
@@ -25,25 +25,26 @@
 nav {
     height: 10vh; /**/
     border-width: 0 0 1px 0;
-    border-color: black;
+    border-color: rgb(119, 47, 26);
     border-style: solid;
     display: flex; /**/
     justify-content: center; /**/
     align-items: center; /**/
-    background-color:rgb(99, 79, 50);
+    background-color:rgb(88, 81, 35);
 }
+
 
 .main {
     min-height: 80vh; /**/
-    background-color: rgb(222, 213, 159);
+    background-color: rgba(238, 194, 112, 0.678);
 }
 
 footer {
     min-height: 10vh; /**/
     border-width: 1px 0 0 0;
-    border-color: black;
+    border-color: rgb(119, 47, 26);
     border-style: solid;
-    background-color:rgb(99, 79, 50);   
+    background-color:rgb(88, 81, 35);   
 }
 
 .navlist {
@@ -59,7 +60,7 @@ footer {
 .navlist li a {
     text-decoration: none;
     color: black;
-    font-size: 2em;
+    font-size: 25px;
     text-transform: uppercase;
 }
 
@@ -104,7 +105,7 @@ footer {
 }
 
 #inform {
-    font-size: 2em;
+    font-size: 1.5em;
 }
 
 #inform * {
@@ -115,4 +116,174 @@ footer {
     font-size: 4em;
     text-align: center;
     padding-top: 50px;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between; /* Распределение блоков по ширине */
+}
+
+.block {
+    flex-basis: 30%; /* Устанавливаем ширину блока в 30% от контейнера */
+    padding: 20px;
+    border: none;
+    text-align: center;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+h2 {
+    margin: 10px 0;
+}
+
+.btn1 {
+    border: none;
+    border-radius: 10px;
+    text-decoration: none;
+    color: white;
+    background: rgb(245, 133, 73);
+    box-shadow: 0 5px 0 rgb(245, 133, 73);
+    margin-top: 30px;
+    height: 50px;
+    width: 70px;
+}
+
+.btn1:hover {
+    background: rgba(245, 133, 73, 0.922);
+    box-shadow: none;
+    position: relative;
+    top: 5px;
+}
+
+.body-custom {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.section {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+.btn2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 70px 100px;
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 40px;
+    width: 30em;
+    height: 16em;
+}
+
+.btn2 img {
+    max-width: auto; /* Регулируйте размер изображения */
+    max-height: auto; /* Регулируйте размер изображения */
+    margin-bottom: 10px; /* Регулируйте отступ между изображением и текстом */
+}
+
+.button-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%; /* Добавляем эту строку, чтобы кнопки были в один ряд */
+    margin-bottom: 20px; /* Отступ между рядами кнопок */
+}
+
+
+.body-shop {
+    margin: 0;
+    padding: 0;
+}
+
+.button-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.btn3 {
+    display: flex;
+    align-items: center;
+    margin-top: 10px; /* Отступ сверху между кнопками */
+    background-color: rgb(119, 47, 26);
+    color: rgba(240, 248, 255, 0.779);
+    width: 30em;
+    height: 13em;
+}
+
+.btn3-img {
+    max-width: 100px; /* Размер изображения */
+    max-height: 100px; /* Размер изображения */
+    margin-right: 10px; /* Отступ между изображением и описанием */
+}
+
+.button-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.product-description {
+    margin-bottom: 5px; /* Отступ между описанием и ценой */
+}
+
+.product-price {
+    font-weight: bold; /* Жирный шрифт для цены */
+}
+
+.makaroncontainer {
+    width: 300px;
+    text-align: center;
+}
+
+.mkrncaption {
+    position: relative;
+    top: -140px;
+    font-size: 1.5em;
+    font-weight: bold;
+    color: white;
+    text-shadow: 0 0 25px black;
+    z-index: 2;
+}
+
+.radialblack {
+    background-image: radial-gradient(50% 15% at center, rgba(0, 0, 0, 0.5) 15%, rgba(255, 255, 255, 0));
+    width: 250px;
+    height: 250px;
+    position: absolute;
+    z-index: 1;
+    left: 25px;
+}
+
+.darktrans {
+    width: 250px;
+    height: 250px;
+    position: absolute;
+    z-index: 1;
+    left: 25px;
+    transition: 0.25s background-color;
+}
+
+.darktrans:hover {
+    background: rgba(50, 50, 50, 0.5);
+}
+
+.figimg {
+    width: 300px;
 }
