@@ -130,11 +130,6 @@ footer {
     text-align: center;
 }
 
-img {
-    max-width: 100%;
-    height: auto;
-}
-
 h2 {
     margin: 10px 0;
 }
@@ -249,10 +244,14 @@ h2 {
 
 .makaroncontainer {
     width: 300px;
+    height: 281px;
     text-align: center;
 }
 
 .mkrncaption {
+    width: 250px;
+    height: 27px;
+    left: 27px;
     position: relative;
     top: -140px;
     font-size: 1.5em;
@@ -266,17 +265,21 @@ h2 {
     background-image: radial-gradient(50% 15% at center, rgba(0, 0, 0, 0.5) 15%, rgba(255, 255, 255, 0));
     width: 250px;
     height: 250px;
-    position: absolute;
+    position: relative;
+    float: left;
     z-index: 1;
     left: 25px;
+    top: -281px;
 }
 
 .darktrans {
     width: 250px;
+    float: left;
     height: 250px;
-    position: absolute;
+    position: relative;
     z-index: 1;
     left: 25px;
+    top: -531px;
     transition: 0.25s background-color;
 }
 
@@ -284,6 +287,74 @@ h2 {
     background: rgba(50, 50, 50, 0.5);
 }
 
-.figimg {
-    width: 300px;
+.figure img {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+}
+
+.productflex {
+    width: 1250px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.bghome {
+    width: 100%;
+    height: 20vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+    background-image: url("/images/banner_head-removebg-preview.png");
+}
+
+.homecaption {
+    position: relative;
+    left: 75px;
+    font-size: 4em;
+    color:ivory;
+    text-shadow: 1px -1px bisque, -1px -1px bisque, -1px 1px bisque, 1px 1px bisque;
+    text-align: center;
+}
+
+.headerhome {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20vh;
+    margin-bottom: 10px;
+}
+
+.flexcontect {
+    display: flex;
+    justify-content: space-between;
+}
+
+.homecontent h3, h4 {
+    color:ivory;
+    text-shadow: 1px -1px bisque, -1px -1px bisque, -1px 1px bisque, 1px 1px bisque;
+    margin-bottom: 20px;
+    font-size: 1.5em;
+    margin-left: 20px;
+}
+
+.homecontent p {
+    margin-bottom: 40px;
+    font-size: 20px;
+}
+
+.acontent {
+    text-decoration: none;
+    color: rgb(88, 81, 35);
+}
+
+.acontent:hover {
+    text-decoration:underline;
+}
+
+@media (min-width: 600px) {
+    .homecontent {
+        width: 600px;
+    }
 }

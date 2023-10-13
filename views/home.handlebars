@@ -11,16 +11,30 @@
 </div> --}}
 
 <div>
-    <div class="homeflex">
-        {{#each makaron}}
-        <div class="makaroncontainer">
-            <figure>
+    <div class="bghome"></div>
+    <div class="headerhome">
+        <h1 class="homecaption">Makaronia</h1>
+    </div>
+    <div class="flexcontect">
+        <div class="productflex">
+            {{#each makaron}}
+            <div class="makaroncontainer">
+                <div class="figure">
+                    <img clas="figimg" src="/images/{{this.title}}.jpg" alt="{{this.title}}">
+                    <h3 class="mkrncaption">{{this.title}}</h3>
+                </div>
                 <div class="radialblack"></div>
                 <div class="darktrans"></div>
-                <img clas="figimg" src="/images/{{this.title}}.jpg" width="250">
-                <figcaption class="mkrncaption">Bolognese</figcaption>
-            </figure>
+            </div>
+            {{/each}}
         </div>
-        {{/each}}
+        <div class="homecontent">
+            <h3>Witamy w Makaronii —</h3>
+            <p style="margin-bottom: 15px;">Na tej stronie dowiesz się ta odrazu zamówisz sobie kilka porcji najładniejszych makaron. Na tej stronie jest umieszczono najładniejsze makaorony, które są bardzo używane na okolicach Europy oraz Polski.</p>
+            <p>Ale też <a class="acontent" href="/chefs">możesz znaleźć</a> szefów, które Cię napewno zainteresują, bo oni są jedni z szefów makaron nami smakowanych</p>
+            <p style="margin-bottom: 15px;">Także możesz dowiedzieć się nie wielu o <a class="acontent" href="/recipes">recipes</a> według makaron wyłącznie o najsmaczniejwych z naszych zamówień</p>
+            <h4>Tutaj możesz zamówić —</h4>
+            <p>Na <a class="acontent" href="/shop">tamtej strone</a> możesz już zamówić, jednak najpierw musisz wybrać swoją ulubioną na tej stronie potrawę, naciskając na jeden z tych wyborów</p>
+        </div>
     </div>
 </div>

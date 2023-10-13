@@ -18,10 +18,22 @@ app.get("/home", (req, res) => {
                 title: "zupa pomidorowa z makaronem"
             },
             {
-
+                title: "szpiniak z makaronem"
             },
             {
-
+                title: "makaron z suszonymi pomidorami"
+            },
+            {
+                title: "carbonara"
+            },
+            {
+                title: "lazania"
+            },
+            {
+                title: "makaron z serem"
+            },
+            {
+                title: "salatka z makaronem"
             }
         ]
     })
