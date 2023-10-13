@@ -39,12 +39,6 @@ app.get("/home", (req, res) => {
     })
 });
 
-app.get("/menu", (req, res) => {
-    res.render("menu", {
-        title: "menu | Makaron"
-    })
-});
-
 app.get("/shop", (req, res) => {
     res.render("shop", {
         title: "shop | Makaron"
@@ -59,7 +53,10 @@ app.get("/recipes", (req, res) => {
 
 app.get("/chefs", (req, res) => {
     res.render("chefs", {
-        title: "chefs | Makaron"
+        title: "chefs | Makaron",
+        names: [
+            "Marco Polo"
+        ]
     })
 });
 
