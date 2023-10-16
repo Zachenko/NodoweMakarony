@@ -1,3 +1,17 @@
-<div>
-    
+<div class="containerchefs">
+    {{#each names}}
+    <div class="flexchefs">
+        <div>
+            <img class="imgchef" src="/images/{{this.name}}.jpg">
+        </div>
+        <div class="chfcontent">
+            <h3>{{this.name}}</h3>
+            <p>{{this.fp}}</p>
+            <p>{{this.sp}}</p>
+            {{#if this.tp}}
+            <p>{{this.tp}}</p>
+            {{/if}}
+        </div>
+    </div>
+    {{/each}}
 </div>
