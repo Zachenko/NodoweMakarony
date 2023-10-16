@@ -246,6 +246,7 @@ h2 {
     width: 300px;
     height: 281px;
     text-align: center;
+    cursor: pointer;
 }
 
 .mkrncaption {
@@ -351,6 +352,21 @@ h2 {
 
 .acontent:hover {
     text-decoration:underline;
+}
+
+.moveshop {
+    width: min-content;
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    background: rgba(245, 133, 73, 0.922);
+    padding: 10px;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+.moveshop:hover {
+    text-shadow: 0 0 10px white;
 }
 
 @media (min-width: 600px) {

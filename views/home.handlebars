@@ -18,7 +18,7 @@
     <div class="flexcontect">
         <div class="productflex">
             {{#each makaron}}
-            <div class="makaroncontainer">
+            <div class="makaroncontainer" id="{{this.title}}">
                 <div class="figure">
                     <img clas="figimg" src="/images/{{this.title}}.jpg" alt="{{this.title}}">
                     <h3 class="mkrncaption">{{this.title}}</h3>
@@ -36,7 +36,10 @@
             <h4>Tutaj możesz zamówić —</h4>
             <p>Na <a class="acontent" href="/shop">tamtej strone</a> możesz już zamówić, jednak najpierw musisz wybrać swoją ulubioną na tej stronie potrawę, naciskając na jeden z tych wyborów</p>
             <h4>Skontaktuj się z nami —</h4>
-            <p><a class="acontent" href="/contact">Skontaktuj się z nami</a> jeśli masz jakieś pytania czy masz jakiś problem</p>
+            <p style="margin-bottom: 150px"><a class="acontent" href="/contact">Skontaktuj się z nami</a> jeśli masz jakieś pytania czy masz jakiś problem</p>
+            <p id="choosed" style="margin-bottom: 0;">Wybrane dania: </p><br>
+            <a class="moveshop" href="/shop">Przejść</a>
+            <button type="button" class="moveshop" style="border: none; font-size: 1em; cursor:pointer" onclick="clearer()">Oczyścić</button>
         </div>
     </div>
 </div>

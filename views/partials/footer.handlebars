@@ -3,6 +3,31 @@
     <footer>
 
     </footer>
+    
+    <script>
+    
+    if (!localStorage.getItem("orders")) localStorage.setItem("orders", JSON.stringify([]));
+    let orders = JSON.parse(localStorage.getItem("orders"));
+    document.getElementById("choosed").innerHTML = `Wybrane dania: ${orders}`
+    
+    for (let elem of document.getElementsByClassName("makaroncontainer")) {
+        elem.addEventListener("click", function (event) {
+            orders.push(event.currentTarget.id)
+            localStorage.setItem("orders", JSON.stringify(orders));
+            console.log(localStorage.getItem("orders"));
+            orders = JSON.parse(localStorage.getItem("orders"));
+            document.getElementById("choosed").innerHTML = `Wybrane dania: ${orders}`
+        })
+    }
+
+    function clearer () {
+        localStorage.removeItem("orders");
+        localStorage.setItem("orders", JSON.stringify([]));
+        orders = JSON.parse(localStorage.getItem("orders"));
+        document.getElementById("choosed").innerHTML = `Wybrane dania: ${orders}`
+    }
+
+    </script>
 
 </body>
 </html>
